@@ -1,0 +1,38 @@
+.main__content {
+
+    & h1 {
+        font-size: 3rem;
+        font-weight: bolder;
+        text-align: center;
+    }
+}
+
+.card {
+    background-color: rgba(0, 8, 15 , 0.15);
+    border-radius: 10px;
+    padding: 1rem;
+    height: auto;
+    width: 25rem;
+    transition: 150ms ease-out;
+    cursor: pointer;
+    transition: 150ms ease-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 150ms ease-in;
+}
+
+.main__content__Cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+@media ( max-width: 1280px ) {
+    .card {
+        height: auto;
+        width: 90%;
+    }
+}

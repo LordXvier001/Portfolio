@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songs</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  color: silver;
+}
+
+header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient( rgba( 0 , 0 , 0 , 0.8 ) , rgba( 0 , 0 , 0 , 0.8 )) , url("https://previews.123rf.com/images/yacobchuk/yacobchuk1605/yacobchuk160500739/57410080-hit-song-cheerful-and-content-young-woman-listening-to-music-using-her-mobile-phone-and-earphones.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+body :is( h1 , strong , iframe ) {
+  padding: 1rem;
+}
+.lists {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 811px) {
+  lists {
+    padding-left: 3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  video {
+    width: 370px;
+    height: 240px;
+  }
+}
+@media screen and (max-width: 450px) {
+  video {
+    width: 300px;
+    height: 170px;
+  }
+  .lists {
+    padding-left: 0.3rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  video {
+    width: 260px;
+    height: 130px;
+  }
+}
+@media screen and (max-width: 350px) {
+  video {
+    width: 220px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 280px) {
+  h1 {
+    font-size: 1.1rem;
+  }
+  video {
+    width: 170px;
+    height: 90px;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <html>
+  <body>
+    <header>
+      <h1>Some Of The Songs</h1>
+      <div class="lists" style="padding-right: 1rem">
+        <div class="song1">
+        <strong style="font-size: 1.3rem; padding: 2rem;">Believer</strong>
+        <br>
+        <video src="believer.mp4" width="360" height="230" controls></video>
+        </div>
+        <div class="song2">
+        <strong style="font-size: 1.3rem; padding: 2rem;">Bones</strong>
+          <br>
+          <video src="bones.mp4" controls width="360" height="230"></video>
+        </div>
+        <div class="song3">
+          <strong style="font-size: 1.3rem; padding: 2rem;">Daylight</strong>
+          <br>
+          <video src="daylight.mp4" controls width="360" height="230"></video>
+        </div>
+        <div class="song4">
+          <strong style="font-size: 1.3rem; padding: 2rem;">Heat Waves</strong>
+          <br>
+          <video src="heatwaves.mp4" controls width="360" height="230"></video>
+        </div>
+        <div class="song5">
+          <strong style="font-size: 1.3rem; padding: 2rem;">Blinding Lights</strong>
+          <br>
+          <video src="blindinglights.mp4" controls width="360" height="230"></video>
+        </div>
+        <div class="song6">
+          <strong style="font-size: 1.3rem; padding: 2rem;">Night Changes</strong>
+          <br>
+          <video src="nightchnages.mp4" controls width="360" height="230"></video>
+        </div>
+        <div class="song7">
+          <strong style="font-size: 1.3rem; padding: 2rem;">Mocking Bird</strong>
+          <br>
+          <video src="mockingbird.mp4" controls width="360" height="230"></video>
+        </div>
+        <div class="song8">
+          <strong style="font-size: 1.3rem; padding: 2rem;">Sunflower</strong>
+          <br>
+          <video src="sunflower.mp4" controls width="360" height="230"></video>
+        </div>
+        <div class="song9">
+            <strong style="font-size: 1.3rem; padding: 2rem;">Shape Of You</strong>
+            <br>
+            <video src="ShapeOfyou.mp4" controls width="360" height="230"></video>
+          </div>
+      </div>
+    </header>
+  </body>
+</html>
+</body>
+</html>

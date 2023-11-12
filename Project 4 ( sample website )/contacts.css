@@ -1,0 +1,129 @@
+.contacts {
+
+    & h1 {
+        font-size: 5rem;
+        font-weight: bolder;
+        background-color: rgba( 0 , 0 , 0 , 0.15);
+        padding: 2rem 2rem 10rem 2rem;
+        border-radius: 1rem;
+        text-align: center;
+    }
+}
+
+.contacts {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & input , & textarea{
+        display: block;
+    }
+}
+.contacts__form {
+    background-color: rgba( 0 , 0 , 0 , 0.15);
+    padding: 3rem;
+    border-radius: 1rem;
+    /* right: 8rem; */
+}
+
+input {
+    height: 2.5rem;
+    min-width: 24rem;
+    margin-bottom: .5rem;
+    /* background-color: rgba( 0 , 0 , 0 , 0.15); */
+    font-size: 1rem;
+    /* background: none; */
+    background: rgba( 0 , 0 ,0 , 0.04);
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    transition: all 400ms;
+}
+input:is( :hover , :focus , :active){
+    background: none;
+    transition: all 400ms;
+}
+textarea {
+    min-width: 24rem;
+    height: 8rem;
+    font-size: 1rem;
+    background: rgba( 0 , 0 ,0 , 0.04);
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #00080f;
+    transition: 400ms;
+
+    &:hover {
+            background: none;
+            transition: all 400ms;
+    }
+}
+
+button:active {
+    transform: scale(0.95);
+    transition: 150ms;
+}
+
+@media ( max-width: 1140px ) {
+    .contacts {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        & h1 {
+                padding: 2rem 2rem 0 2rem;
+        }
+    }   
+}
+
+@media ( max-width: 654px ) {
+    .contacts {
+        & h1 {
+            font-size: 3rem;
+        }
+        & input{
+            min-width: 18rem;
+        }
+    }
+    .contacts__form {
+        padding: 1.2rem;
+    }
+    #textarea {
+        min-width: 18rem;
+    }
+}
+
+@media ( max-width: 422px ) {
+    .contacts {
+        & h1 {
+            font-size: 2.4rem;
+        }
+        & input , & textarea {
+            min-width: 15rem;
+        }
+    }
+}
+
+@media ( max-width: 350px ) {
+        .contacts__form {
+            padding: 1rem;
+        }
+    .contacts__title h1 {
+        font-size: 2rem;
+        padding: 2rem 1rem 0 1rem;
+    }
+}
+
+@media ( max-width: 322px ) {
+    .contacts__form {
+        padding: 0.8rem;
+    }
+    .contacts__title h1 {
+        font-size: 1.8rem;
+        padding: 2rem 0.8rem 0 0 0.8rem;
+    }
+}

@@ -1,0 +1,51 @@
+.main__content2 {
+
+    & h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+.big__cards {
+    background-color: rgba(0, 8, 15 , 0.15);
+    border-radius: 10px;
+    padding: 1rem;
+    height: auto;
+    width: 40%;
+    transition: 150ms ease-out;
+    cursor: pointer;
+    transition: 150ms ease-out;
+
+    &:hover {
+        transform: translateY(-6px);
+        transition: 150ms;
+    }
+}
+
+.main__content__big__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.main__content2 span {
+    text-decoration: underline;
+    color: gray;
+    transition: 150ms;
+
+    &:hover {
+        color: #00080f;
+        transition: 150ms;
+    }
+}
+
+@media ( max-width: 700px ) {
+    .main__content__big__cards {
+        flex-direction: column;
+    }
+    .big__cards {
+        width: 90%;
+    }
+}
